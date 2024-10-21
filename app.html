@@ -1,0 +1,59 @@
+<script>
+  // Task 1: Code a Person class
+  class Person {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    // Method to introduce the person
+    introduce() {
+      console.log(`Hi, my name is ${this.name} and I'm ${this.age} years old.`);
+    }
+  }
+
+  // Task 2: Code a Worker class
+  class Worker extends Person {
+    constructor(name, age, jobTitle) {
+      super(name, age);
+      this.jobTitle = jobTitle;
+    }
+
+    // Method to perform work
+    work() {
+      console.log(`${this.name} is working as a ${this.jobTitle}.`);
+    }
+  }
+
+  // Task 3: Code an intern object, run methods
+  function intern() {
+    let intern1 = new Worker("Alice", 22, "Intern");
+    intern1.introduce();
+    intern1.work();
+  }
+
+  // Task 4: Code a manager object, methods
+  function manager() {
+    class Manager extends Person {
+      constructor(name, age, department) {
+        super(name, age);
+        this.department = department;
+      }
+
+      // Method to manage
+      manage() {
+        console.log(
+          `${this.name} is managing the ${this.department} department.`
+        );
+      }
+    }
+
+    let manager1 = new Manager("Bob", 35, "HR");
+    manager1.introduce();
+    manager1.manage();
+  }
+
+  // Running the intern and manager functions
+  intern();
+  manager();
+</script>

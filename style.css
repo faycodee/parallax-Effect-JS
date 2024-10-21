@@ -1,0 +1,129 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+:root {
+  --Ycolor: rgb(255, 244, 30);
+  --YcolorF: rgb(234, 255, 113);
+  --YcolorD: rgb(12, 12, 0);
+  --Bcolor: rgb(45, 195, 255);
+  --BcolorF: rgb(230, 239, 243);
+  --BcolorD: rgb(2, 15, 20);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(var(--BcolorD), var(--Bcolor));
+  
+}
+a {
+  color: var(--BcolorF);
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 45px;
+  width: 90%;
+  z-index: 1;
+}
+
+#logo {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 10px 0 0;
+}
+li {
+  margin: 0 20px 0 0;
+}
+ul a {
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+li a:hover,
+.active {
+  background-color: var(--BcolorF);
+  border-radius: 20px;
+  color: var(--BcolorD);
+}
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.home img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.bato {
+  mix-blend-mode: color-burn;
+}
+.tir,
+.tir2 {
+  mix-blend-mode: color-burn;
+
+  transform: translate(-200px, 100px);
+}
+.tir2 {
+  transform: translate(-380px, 50px);
+}
+.star {
+  z-index: -2;
+}
+
+.moon {
+  mix-blend-mode: screen;
+  filter: hue-rotate(700deg);
+  z-index: -1;
+}
+.jbl1,
+.jbl2,
+.jbl3,
+.wad {
+  filter: hue-rotate(250deg);
+}
+section {
+  padding: 50px;
+  background-color: var(--BcolorD);
+  color: var(--McolorF);
+  height: 100vh;
+  z-index: 11;
+}
+article {
+  width: 100%;
+  color: var(--BcolorF);
+  margin: 25px;
+  line-height: 25px;
+}
+.moon {
+  transform: translateY(40px);
+}
+article p {
+  text-align: justify;
+}
+div H2 {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  display: flex;
+  top: 20vh;
+  left: 45.5vw;
+  z-index: 1;
+  font-size: 30px;
+}
+div h2 {
+  z-index: -9;
+}
+.jbl3 {
+  z-index: 50000;
+}
